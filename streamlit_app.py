@@ -11,7 +11,7 @@ import os
 # CONFIGURATION & API CONNECTIVITY
 # ===================================================================
 
-API_BASE_URL = st.secrets("API_URL", "http://localhost:8000")
+API_BASE_URL = st.secrets.get("API_URL", "http://localhost:8000")
 
 # ===================================================================
 # STREAMLIT UI
@@ -116,3 +116,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
